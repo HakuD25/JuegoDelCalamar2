@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Calamar Temporada 2</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(to bottom, blue, red);
+            overflow-x: hidden;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2 {
+            text-align: center;
+            width: 100%;
+        }
+        .main-title {
+            display: inline-block;
+        }
+        .main-title span {
+            display: inline-block;
+            animation: jump 0.5s ease infinite alternate;
+        }
+        @keyframes jump {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        .subtitle {
+            animation: colorChange 4s linear infinite;
+        }
+        @keyframes colorChange {
+            0% { color: red; }
+            33% { color: blue; }
+            66% { color: black; }
+            100% { color: red; }
+        }
+        section {
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 640px;
+        }
+        iframe {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-top: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 640px;
+        }
+        .password-prompt {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .password-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            border: 2px solid white;
+        }
+        .password-box h2 {
+            margin-top: 0;
+        }
+        .password-box input {
+            margin: 10px 0;
+            padding: 5px;
+            width: 200px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid white;
+            color: white;
+        }
+        .password-box button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .password-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="password-prompt" class="password-prompt">
+        <div class="password-box">
+            <h2>Ingrese la contraseña</h2>
+            <input type="password" id="password-input" placeholder="Contraseña">
+            <button onclick="checkPassword()">Acceder</button>
+            <p id="error-message" style="color: #ff6b6b;"></p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1 class="main-title">
+            <span>J</span><span>u</span><span>e</span><span>g</span><span>o</span>
+            <span>d</span><span>e</span><span>l</span>
+            <span>C</span><span>a</span><span>l</span><span>a</span><span>m</span><span>a</span><span>r</span>
+            <span>T</span><span>e</span><span>m</span><span>p</span><span>o</span><span>r</span><span>a</span><span>d</span><span>a</span>
+            <span>2</span>
+        </h1>
+        <h2 class="subtitle">Películas por Yape 973308572</h2>
+
+        <section>
+            <h2>Capítulo 1</h2>
+            <iframe src="https://www.tokyvideo.com/es/embed/630867" frameborder="0" width="640" height="360" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen allowtransparency></iframe>
+            <p style="text-align:center;max-width:100%;width:640px;margin:0 auto;font-size:14px">
+                Juego del Calamar Temporada 2 - Capítulo 1
+            </p>
+        </section>
+
+        <section>
+            <h2>Capítulo 2</h2>
+            <iframe src="https://www.tokyvideo.com/es/embed/630869" frameborder="0" width="640" height="360" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen allowtransparency></iframe>
+            <p style="text-align:center;max-width:100%;width:640px;margin:0 auto;font-size:14px">
+                Juego del Calamar Temporada 2 - Capítulo 2
+            </p>
+        </section>
+
+        <section>
+            <h2>Capítulo 3</h2>
+            <iframe src="https://www.tokyvideo.com/es/embed/630870" frameborder="0" width="640" height="360" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen allowtransparency></iframe>
+            <p style="text-align:center;max-width:100%;width:640px;margin:0 auto;font-size:14px">
+                Juego del Calamar Temporada 2 - Capítulo 3
+            </p>
+        </section>
+
+        <section>
+            <h2>Capítulo 4</h2>
+            <iframe src="https://www.tokyvideo.com/es/embed/630881" frameborder="0" width="640" height="360" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen allowtransparency></iframe>
+            <p style="text-align:center;max-width:100%;width:640px;margin:0 auto;font-size:14px">
+                Juego del Calamar Temporada 2 - Capítulo 4
+            </p>
+        </section>
+
+        <section>
+            <h2>Capítulo 5</h2>
+            <iframe src="https://www.tokyvideo.com/es/embed/630883" frameborder="0" width="640" height="360" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen allowtransparency></iframe>
+            <p style="text-align:center;max-width:100%;width:640px;margin:0 auto;font-size:14px">
+                Juego del Calamar Temporada 2 - Capítulo 5
+            </p>
+        </section>
+
+        <section>
+            <h2>Capítulo 6</h2>
+            <iframe src="https://www.tokyvideo.com/es/embed/630882" frameborder="0" width="640" height="360" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen allowtransparency></iframe>
+            <p style="text-align:center;max-width:100%;width:640px;margin:0 auto;font-size:14px">
+                Juego del Calamar Temporada 2 - Capítulo 6
+            </p>
+        </section>
+
+        <section>
+            <h2>Capítulo 7</h2>
+            <iframe src="https://www.tokyvideo.com/embed/631022" frameborder="0" width="640" height="360" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen allowtransparency></iframe>
+            <p style="text-align:center;max-width:100%;width:640px;margin:0 auto;font-size:14px">
+                Juego del Calamar Temporada 2 - Capítulo 7
+            </p>
+        </section>
+
+        <section>
+            <h2>Soporte</h2>
+            <p style="text-align: center;">
+                Si necesitas soporte, <a href="https://wa.me/51973308572" target="_blank">haz clic aquí para contactarnos por WhatsApp</a>.
+            </p>
+        </section>
+
+        <footer>
+            <p>
+                ¿Quieres más películas o series? ¡Contáctanos al <a href="https://wa.me/51973308572" target="_blank">+51 973308572</a> para más información!
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        let intentos = 0;
+
+        function checkPassword() {
+            const password = document.getElementById('password-input').value;
+            if (password === "peliculasporyape973308572") {
+                document.getElementById('password-prompt').style.display = 'none';
+            } else {
+                intentos++;
+                if (intentos >= 5) {
+                    alert("Has superado el número máximo de intentos. Si tienes problemas, contacta al soporte.");
+                    window.location.href = "https://wa.me/51973308572";
+                } else {
+                    document.getElementById('error-message').textContent = `Contraseña incorrecta. Intentos restantes: ${5 - intentos}`;
+                }
+            }
+        }
+
+        // Añadir un retraso a la animación de salto para cada letra
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const title = document.querySelector('.main-title');
+            const letters = title.querySelectorAll('span');
+            letters.forEach((letter, index) => {
+                letter.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+</html>
